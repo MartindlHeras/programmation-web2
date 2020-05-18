@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title></title>
+  </head>
+  <body>
+    <form id="form" action="form.php" method="post">
+
+        <label for="firstName">Prénom *</label>
+        <input id="firstName" type="text" name="firstName"/><br>
+
+        <label for="lastName">Nom *</label>
+        <input id="lastName" type="text" name="lastName"/><br>
+
+        <label for="subject">Sujet *</label>
+        <select id="subject" name="subject">
+            <option value="bug">Rapport de bug</option>
+            <option value="information">Demande d'information</option>
+            <option value="contact">Demande de contact</option>
+        </select><br>
+
+        <label for="message">Votre message *</label>
+        <textarea id="message" name="message" rows="8" cols="80"></textarea><br>
+
+        <button id="submit" type="submit">Envoyer le message</button>
+    </form>
+
+  </body>
+
+  <script type="text/javascript" src="script.js"></script>
+</html>
